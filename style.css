@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --color-primary: #F275AF;
+  --color-secondary: #F2B5D4;
+  --color-accent: #E23A87;
+  --color-brown: #774216;
+  --color-light: #FEE1DD;
+  --color-gray: #e7eaee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-gray);
+}
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 1em 2em;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .box-header{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header h1, header h2{
+    color: var(--color-light);
+    /* margin-right: 3em; */
+}
+header h1{
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+}
+header .perfil{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+header .perfil span{
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--color-light);
+}
+main{
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-milk, .box-picole, .box-sorvetes{
+    /* border: 1px solid var(--color-accent); */
+} 
+main .box-milk{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    
+}
+main .box-milk .box-sabor{
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 10px #d7d9db;
+    
+    
+    /* border: 1px solid var(--color-accent); */
+}
+main .box-milk .box-sabor img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+main .box-milk .box-sabor h3{
+    color: var(--color-primary);
+}
+main .box-milk .box-sabor button{
+    width: 45%;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background-color: var(--color-accent);
+    color: var(--color-gray);
+    padding: 5px;
+    text-align: center;
+    transition: .3s;
+}
+main .box-milk .box-sabor button span{
+    font-size: 1em;
+}
+main .box-milk .box-sabor .add-button:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+main .box-picole{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+}
+main .box-picole .sabor-picole{
+    width: 90%;
+    height: 100%;
+    border: auto;
+    aspect-ratio: 4 / 3; /* retângulo */
+    overflow: hidden;
+    border-radius: 10px;
+}
+main .box-picole .sabor-picole img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .4s;
+}
+main .box-picole .sabor-picole img:hover{
+    opacity: 0.8;
+}
+main .box-sorvetes-casquinha{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 15px;
+}
+main .box-sorvetes-casquinha .sabor-sorvete{
+    width: 100%;
+    height: 100%;
+    
+}
+main .box-sorvetes-casquinha .sabor-sorvete img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transition: .3s;
+}
+main .box-sorvetes-casquinha .sabor-sorvete img:hover{
+    opacity: 0.8;
+}
